@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "inter";
+  color: #ffffff;
+}
+
+body {
+  background-color: firebrick;
+}
+
+#b {
+  position: fixed;
+  z-index: -1;
+  width: 100em;
+  height: 100%;
+  top: 0;
+  left: -50;
+}
+
+.aprese {
+  font-family: "inter";
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#conteiner {
+  width: 358px;
+  margin: 10px auto 0px;
+}
+
+#photo {
+  text-align: center;
+  padding: 24px;
+}
+
+#photo img {
+  width: 142px;
+}
+
+#photo p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icons {
+  border-radius: 50px;
+  position: absolute;
+  max-width: 3em;
+  z-index: 1;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+ul li a {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: sepia(30%);
+  backdrop-filter: contrast(35%);
+  -webkit-backdrop-filter: sepia(30%);
+  -webkit-backdrop-filter: contrast(35%);
+
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  text-shadow: 0.1em 0.2em 0.2em black;
+  padding: 16px 24px;
+  margin-top: 32px;
+}
+
+#marca {
+  text-align: center;
+  text-shadow: 0.1em 0.2em 0.2em black;
+  padding: 16px;
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+#receita {
+  border: 2px solid transparent;
+  animation: pulse 0.5s infinite;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: rgb(255, 255, 255);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.801);
+  }
+  100% {
+    border-color: rgba(236, 233, 233, 0.445);
+  }
+}
+
+@media (max-width: 730px) {
+  #b {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: -1;
+    width: 52em;
+    height: 100%;
+    top: 0;
+    left: -13em;
+  }
+}
