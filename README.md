@@ -25,7 +25,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Feito para ter um controle maior e simples dos habitos.
 
 - [Acesse o projeto finalizado, online]()
 
